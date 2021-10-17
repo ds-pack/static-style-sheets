@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "ESNext",
+    "lib": ["esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -16,6 +16,6 @@
     "emitDeclarationOnly": true,
     "outDir": "dist"
   },
-  "exclude": ["node_modules", ".yarn", "src/__tests__/"],
+  "exclude": ["node_modules", ".yarn"],
   "include": ["**/*.ts", "**/*.tsx"]
 }
