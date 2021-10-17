@@ -11,7 +11,7 @@
     "prebuild": "rm -rf dist/",
     "build": "babel src/ --out-dir dist/ --extensions '.ts,.tsx'",
     "type-check": "tsc --noEmit",
-    "pretest": "build",
+    "pretest": "yarn build",
     "test": "jest",
     "test-watch": "jest --watch",
     "test-cov": "jest --collectCoverage",
