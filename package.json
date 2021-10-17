@@ -9,12 +9,14 @@
   "license": "MIT",
   "scripts": {
     "prebuild": "rm -rf dist/",
-    "build": "babel src/ --out-dir dist/ --extensions '.ts,.tsx' && tsc",
+    "build": "babel src/ --out-dir dist/ --extensions '.ts,.tsx'",
+    "type-check": "tsc --noEmit",
+    "pretest": "build",
     "test": "jest",
     "test-watch": "jest --watch",
     "test-cov": "jest --collectCoverage",
-    "prepub": "yarn build",
-    "pub": "yarn prepub && yarn publish --access public",
+    "prepub": "yarn build && tsc -p tsconfig.prod.json",
+    "pub": "yarn publish --access public",
     "tsc": "tsc --noEmit"
   },
   "devDependencies": {

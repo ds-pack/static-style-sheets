@@ -29,10 +29,13 @@ module.exports = function (api) {
         ? [
             'src/test.js',
             'src/test.tsx',
+            'src/test.ts',
             'src/__tests__/*.js',
             'src/__tests__/*.tsx',
+            'src/__tests__/*.ts',
             'src/__fixtures__/**/*.js',
             'src/__fixtures__/**/*.tsx',
+            'src/__fixtures__/**/*.ts',
           ]
         : [],
   }
